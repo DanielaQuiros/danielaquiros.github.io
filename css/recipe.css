@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Cutive";
+    src: url("../font//CutiveMono-Regular.ttf");
+}
+@font-face {
+    font-family: "Dancing";
+    src: url("../font/DancingScript-Regular.ttf");
+}
+@font-face {
+    font-family: "Playwrite";
+    src: url("../font/PlaywriteDELA-Regular.ttf");
+}
+body{
+    background-image: url("../img/bg.jpg");
+}
+body > header > h1 {
+    color: rgb(201, 53, 53);
+    font-size: 30px;
+    font-family: "Playwrite";
+    text-align: center;
+}
+body > main{
+    text-align: center;
+}
+body > header > .pic{
+   /* height: 200px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    text-align: center;
+    width: 270px;
+}
+body > main > .ingredients > .title,.preparation > .title{
+    color: rgb(201, 53, 53);
+    font-family: "Playwrite";
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+body > main > .ingredients,
+body > main > .preparation {
+    font-family: "Cutive";
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > main > .ingredients{
+    background-color: rgb(231, 204, 227);
+    border: 8px solid white;
+    border-radius: 5px;
+    box-shadow: 3px 5px 10px black;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    width: 50%;
+}
+body > main > .ingredients > .subtitle{
+    font-family: "Dancing";
+}
+body > main > .preparation {
+    background-color: rgb(231, 204, 227);
+    border: 8px solid white;
+    border-radius: 5px;
+    box-shadow: 3px 5px 10px black;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    width: 50%;
+}
