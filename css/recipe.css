@@ -10,6 +10,9 @@
     font-family: "Playwrite";
     src: url("../font/PlaywriteDELA-Regular.ttf");
 }
+*{
+    box-sizing: border-box;
+}
 body{
     background-image: url("../img/bg.jpg");
 }
@@ -34,14 +37,14 @@ body > header > .pic{
 body > main > .ingredients > .title,.preparation > .title{
     color: rgb(201, 53, 53);
     font-family: "Playwrite";
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
     text-align: center;
 }
 body > main > .ingredients,
 body > main > .preparation {
     font-family: "Cutive";
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
     margin-top: 10px;
     margin-left: auto;
