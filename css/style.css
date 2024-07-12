@@ -19,6 +19,7 @@ body > .header > h1{
     margin: 0px;
     margin-bottom: 10px;
     text-align: center;
+    text-shadow: 3px 3px 5px black;
 }
 body > main > .recipes{
     font-size: 0px;

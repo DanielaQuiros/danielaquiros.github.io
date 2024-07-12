@@ -48,12 +48,14 @@ body > header > .pic{
     text-align: center;
     width: 320px;
 }
-body > main > .ingredients > .title,.preparation > .title{
+body > main > .ingredients > .title,
+body > main > .preparation > .title{
     color: rgb(201, 53, 53);
     font-family: "Playwrite";
     font-size: 40px;
     font-weight: bolder;
     text-align: center;
+    text-shadow: 3px 3px 5px black;
 }
 body > main > .ingredients,
 body > main > .preparation {
@@ -66,7 +68,7 @@ body > main > .preparation {
 }
 
 body > main > .ingredients{
-    background-color: rgb(231, 204, 227);
+    background-color: rgba(231, 204, 227, 0.9);
     border: 8px solid white;
     border-radius: 5px;
     box-shadow: 3px 5px 10px black;
@@ -78,7 +80,7 @@ body > main > .ingredients > .subtitle{
     font-family: "Dancing";
 }
 body > main > .preparation {
-    background-color: rgb(231, 204, 227);
+    background-color: rgba(231, 204, 227,0.9);
     border: 8px solid white;
     border-radius: 5px;
     box-shadow: 3px 5px 10px black;
