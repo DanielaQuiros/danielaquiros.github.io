@@ -15,15 +15,18 @@
 }
 body{
     background-image: url("../img/bg.jpg");
+    margin: 0px;
 }
 body > header > h1 {
     color: rgb(201, 53, 53);
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Playwrite";
     text-align: center;
 }
 body > main{
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 body > header > .pic{
    /* height: 200px;*/
@@ -32,19 +35,19 @@ body > header > .pic{
     margin-right: auto;
     object-fit: cover;
     text-align: center;
-    width: 270px;
+    width: 320px;
 }
 body > main > .ingredients > .title,.preparation > .title{
     color: rgb(201, 53, 53);
     font-family: "Playwrite";
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
     text-align: center;
 }
 body > main > .ingredients,
 body > main > .preparation {
     font-family: "Cutive";
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     margin-top: 10px;
     margin-left: auto;
@@ -59,7 +62,6 @@ body > main > .ingredients{
     padding: 10px;
     text-align: left;
     vertical-align: middle;
-    width: 50%;
 }
 body > main > .ingredients > .subtitle{
     font-family: "Dancing";
@@ -72,5 +74,4 @@ body > main > .preparation {
     padding: 10px;
     text-align: left;
     vertical-align: top;
-    width: 50%;
 }
