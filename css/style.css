@@ -2,6 +2,10 @@
     font-family: "Playwrite";
     src: url("../font/PlaywriteDELA-Regular.ttf");
 }
+a, a:active, a:focus, a:visited{
+    text-decoration: none;
+    outline-style: none;
+}
 body{
     background-image: url("../img/bg.jpg");
     margin: 0px;
@@ -25,7 +29,7 @@ body > main > .recipes > .recipe{
     border: 8px solid white;
     box-shadow: 3px 5px 10px black;
     display: inline-block;
-    font-size: 20px;
+    font-size: 0px;
     height: 240px;
     margin: 10px;
     position: relative;
@@ -37,7 +41,7 @@ body > main > .recipes > .recipe > .name{
     background-color: rgb(240, 51, 98);
     border-radius: 8px;
     font-family: "Playwrite";
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
     right: 50%;
     text-align: center;
