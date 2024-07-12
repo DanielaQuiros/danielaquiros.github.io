@@ -17,10 +17,21 @@ body{
     background-image: url("../img/bg.jpg");
     margin: 0px;
 }
-body > header > h1 {
-    color: rgb(201, 53, 53);
+body > header{
+    background-size: cover;
+    background-position: center;
     font-size: 40px;
+    padding: 5em 0px;
+}
+body > header > h1 {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    color: rgb(201, 53, 53);
+    font-size: inherit;
     font-family: "Playwrite";
+    margin: 0px auto;
+    padding: 10px 20px;
+    width: fit-content;
     text-align: center;
 }
 body > main{
