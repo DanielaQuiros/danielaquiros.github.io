@@ -33,6 +33,7 @@ body > header > h1 {
     padding: 10px 20px;
     width: fit-content;
     text-align: center;
+    text-shadow: 3px 3px 3px black;
 }
 body > main{
     text-align: center;
