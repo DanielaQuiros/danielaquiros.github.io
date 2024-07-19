@@ -3,16 +3,16 @@
     <head>
         <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
         <link href="../css/basic.css" rel="stylesheet" type="text/css"/>
-        <link href="../css/recipe.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/recipes.css" rel="stylesheet" type="text/css"/>
         <meta charset="utf-8"/>
-        <title>Queque de chocolate</title>
+        <title>Postres</title>
     </head>
     <body>
-        <header style="background-image: url('../img/qc.jpg');">
-            <h1>Queque de chocolate</h1>
+        <header class="header">
             <button class="open-menu" onclick="document.querySelector('body > .menu').classList.add('open');">
                 <img class="open-icon" src="../img/icons/menu.png"/>
             </button>
+            <h1>Repostería</h1>
         </header>
         <div class="menu">
             <header class="header-menu">
@@ -39,31 +39,14 @@
             </a>
         </div>
         <main>
-            <div class="ingredients">
-                <p class="title">Ingredientes</p>
-                <ul>
-                    <li>3 bananos</li>
-                    <li>1 taza de cacao puro</li>
-                    <li>1 taza de harina</li>
-                    <li>1/4 taza de azúcar</li>
-                    <li>1 huevo</li>
-                    <li>2 cucharadas de aceite</li>
-                    <li>1 cucharadita de bicarbonato</li>
-                    <li>1 cucharada de vainilla</li>
-                    <li>1 cucharadita de sal</li>
-                    <li>1/2 taza de manzana</li>
-                    <li>Chips de chocolate (Opcional)</li>
-                </ul>
-            </div>
-            <div class="preparation">
-                <p class="title">Preparación</p>
-                <ul>
-                    <li>Tritular los bananos, la manzana, el huevo, el aceite y la vainilla.</li>
-                    <li>Mezclar los ingredientes secos, agregarlos a la mezcla de banano y manzana.</li>
-                    <li>Agregar los chips de chocolate. Engrasar un molde y vertir la mezcla.</li>
-                    <li>Hornear hasta que se meta un palillo en el queque y salga limpio.</li>
-                </ul>
-            </div>
+            <a class="recipe">
+                <img class="img" src="../img/recipes/galletas-mantequilla.jpg"/>
+                <div class="name">Galletas de maní</div>
+            </a>
+            <a class="recipe">
+                <img class="img" src="../img/recipes/alfajores.jpg"/>
+                <div class="name">Alfajores</div>
+            </a>
         </main>
     </body>
 </html>

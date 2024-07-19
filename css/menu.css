@@ -1,0 +1,66 @@
+body > .header > .open-menu{
+    background-color: transparent;
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+body > .header > .open-menu > .open-icon{
+    height: 100px;
+    width: 100px;
+}
+body > .menu{
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0px;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    transition: 0.2s;
+    transform: translateX(-100%);
+    width: 100%;
+    z-index: 100;
+}
+body > .menu.open{
+    transform: translateX(0px);
+}
+body > .menu > .header-menu{
+    margin-bottom: 50px;
+}
+body > .menu > .header-menu > .title{
+    color: white;
+    font-family: "Playwrite";
+    font-size: 70px;
+    text-align: center;
+}
+body > .menu > .header-menu > .close-menu > .close-icon{
+    height: 80px;
+    object-fit: cover;
+    width: 80px;
+}
+
+body > .menu > .header-menu > .close-menu {
+    background-color: transparent;
+    border-radius: 5px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+body > .menu > .category {
+    display: block;
+    margin-bottom: 60px;
+}
+body > .menu > .category > .icon{
+    height: 140px;
+    margin-right: 40px;
+    object-fit: cover;
+    vertical-align: middle;
+    width: 140px;
+}
+body > .menu > .category > .icon-title{
+    color: white;
+    font-family: "Playwrite";
+    display: inline-block;
+    font-size: 80px;
+    vertical-align: middle;
+}

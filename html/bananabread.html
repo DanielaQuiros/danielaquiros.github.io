@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/basic.css" rel="stylesheet" type="text/css"/>
         <link href="../css/recipe.css" rel="stylesheet" type="text/css"/>
         <meta charset="utf-8"/>
         <title>Queque de banano</title>
     </head>
     <body>
-        <header style="background-image: url('../img/qb.jpg');">
+        <header class="header">
+            <button class="open-menu" onclick="document.querySelector('body > .menu').classList.add('open');">
+                <img class="open-icon" src="../img/icons/menu.png"/>
+            </button>
             <h1>Queque de banano</h1>
         </header>
+        <div class="menu">
+            <header class="header-menu">
+                <div class="title">Menú</div>
+                <button class="close-menu" onclick="document.querySelector('body > .menu').classList.remove('open');">
+                    <img class="close-icon" src="../img/icons/x.png"/>
+                </button>
+            </header>
+            <a class="category" href="postres.html">
+                <img class="icon" src="../img/icons/dessert.png"/>
+                <div class="icon-title">Postres</div>
+            </a>
+            <a class="category" href="cakes.html">
+                <img class="icon" src="../img/icons/cake.png"/>
+                <div class="icon-title">Queques</div>
+            </a>
+            <a class="category" href="reposteria.html">
+                <img class="icon" src="../img/icons/cookie.png"/>
+                <div class="icon-title">Repostería</div>
+            </a>
+            <a class="category" href="platos.html">
+                <img class="icon" src="../img/icons/burger.png"/>
+                <div class="icon-title">Platos fuertes</div>
+            </a>
+        </div>
         <main>
             <div class="ingredients">
                 <p class="title">Ingredientes</p>

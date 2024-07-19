@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/basic.css" rel="stylesheet" type="text/css"/>
         <link href="../css/recipe.css" rel="stylesheet" type="text/css"/>
         <meta charset="utf-8"/>
         <title>Arroz con leche</title>
     </head>
     <body>
-        <header style="background-image: url('../img/rp.jpg');">
+        <header class="header">
             <h1>Arroz con leche</h1>
+            <button class="open-menu" onclick="document.querySelector('body > .menu').classList.add('open');">
+                <img class="open-icon" src="../img/icons/menu.png"/>
+            </button>
         </header>
+        <div class="menu">
+            <header class="header-menu">
+                <div class="title">Menú</div>
+                <button class="close-menu" onclick="document.querySelector('body > .menu').classList.remove('open');">
+                    <img class="close-icon" src="../img/icons/x.png"/>
+                </button>
+            </header>
+            <a class="category" href="postres.html">
+                <img class="icon" src="../img/icons/dessert.png"/>
+                <div class="icon-title">Postres</div>
+            </a>
+            <a class="category" href="cakes.html">
+                <img class="icon" src="../img/icons/cake.png"/>
+                <div class="icon-title">Queques</div>
+            </a>
+            <a class="category" href="reposteria.html">
+                <img class="icon" src="../img/icons/cookie.png"/>
+                <div class="icon-title">Repostería</div>
+            </a>
+            <a class="category" href="platos.html">
+                <img class="icon" src="../img/icons/burger.png"/>
+                <div class="icon-title">Platos fuertes</div>
+            </a>
+        </div>
         <main>
-            <div class="ingredients">
-                <p class="title">Ingredientes</p>
-                <ul>
-                    <li>1 taza de arroz crudo</li>
-                    <li>1 lata de leche condensada</li>
-                    <li>1 lata de leche evaporada</li>
-                    <li>2 astillas de canela</li>
-                    <li> 5 clavos de olor</li>
-                    <li>5 tazas de agua</li>
-                    <li>Ralladura de limón</li>
-                    <li>Coco rallado o pasas (Opcional)</li>
-                </ul>
+            <div class="photo">
+                <img class="img" src="../img/recipes/rice.jfif" />
+                <div class="utensils">
+                    <img class="icon" src="../img/icons/cocina.png"/>
+                    <img class="icon" src="../img/icons/cuchara.png"/>
+                    <img class="icon" src="../img/icons/olla.png"/>
+                </div>
             </div>
-            <div class="preparation">
-                <p class="title">Preparación</p>
-                <ul>
-                    <li>Colocar en una olla las 5 tazas de agua con las astillas de canela, ralladura de limón y los clavos de olor. Dejar hervir.</li>
-                    <li>Agregar el arroz y cocinarlo hasta que este suave.</li>
-                    <li>Agregar la leche condensada y la leche evaporada y revolver constantemente.</li>
-                    <li>Retirar las astillas de canela, la ralladura y los clavos de olor.</li>
-                    <li>Adicionar el coco rallado o las pasas y mezaclar hasta que este cremoso.</li>
-                </ul>
+            <div class="recipe">
+                <div class="content ingredients">
+                    <div class="title">
+                        <span>Ingredientes</span>
+                        <img class="icon" src="../img/icons/ingredientes.png"/>
+                    </div>
+                    <ul>
+                        <li>1 taza de arroz crudo</li>
+                        <li>1 lata de leche condensada</li>
+                        <li>1 lata de leche evaporada</li>
+                        <li>2 astillas de canela</li>
+                        <li> 5 clavos de olor</li>
+                        <li>5 tazas de agua</li>
+                        <li>Ralladura de limón</li>
+                        <li>Coco rallado o pasas (Opcional)</li>
+                    </ul>
+                </div>
+                <div class="content preparation">
+                    <div class="title">
+                        <span>Preparación</span>
+                        <img class="icon" src="../img/icons/preparacion.png"/>
+                    </div>
+                    <ul>
+                        <li>Colocar en una olla las 5 tazas de agua con las astillas de canela, ralladura de limón y los clavos de olor. Dejar hervir.</li>
+                        <li>Agregar el arroz y cocinarlo hasta que este suave.</li>
+                        <li>Agregar la leche condensada y la leche evaporada y revolver constantemente.</li>
+                        <li>Retirar las astillas de canela, la ralladura y los clavos de olor.</li>
+                        <li>Adicionar el coco rallado o las pasas y mezaclar hasta que este cremoso.</li>
+                    </ul>
+                </div>
             </div>
         </main>
     </body>
