@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/basic.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/recipe.css" rel="stylesheet" type="text/css"/>
+        <meta charset="utf-8"/>
+        <title>Hamburguesa</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Hamburguesa</h1>
+            <button class="open-menu" onclick="document.querySelector('body > .menu').classList.add('open');">
+                <img class="open-icon" src="../img/icons/menu.png"/>
+            </button>
+        </header> 
+        <div class="menu">
+            <header class="header-menu">
+                <div class="title">Menú</div>
+                <button class="close-menu" onclick="document.querySelector('body > .menu').classList.remove('open');">
+                    <img class="close-icon" src="../img/icons/x.png"/>
+                </button>
+            </header>
+            <a class="category" href="postres.html">
+                <img class="icon" src="../img/icons/dessert.png"/>
+                <div class="icon-title">Postres</div>
+            </a>
+            <a class="category" href="cakes.html">
+                <img class="icon" src="../img/icons/cake.png"/>
+                <div class="icon-title">Queques</div>
+            </a>
+            <a class="category" href="reposteria.html">
+                <img class="icon" src="../img/icons/cookie.png"/>
+                <div class="icon-title">Repostería</div>
+            </a>
+            <a class="category" href="platos.html">
+                <img class="icon" src="../img/icons/burger.png"/>
+                <div class="icon-title">Platos fuertes</div>
+            </a>
+        </div>
+        <main>
+            <div class="photo">
+                <img class="img" src="../img/recipes/falafel-burger.jpg" />
+                <div class="utensils">
+                    <img class="icon" src="../img/icons/horno.png"/>
+                    <img class="icon" src="../img/icons/colador.png"/>
+                    <img class="icon" src="../img/icons/tazon.png"/>
+                </div>
+            </div>
+            <div class="recipe">
+                <div class=" content ingredients">
+                    <div class="title">
+                        <span>Ingredientes</span>
+                        <img class="icon" src="../img/icons/ingredientes.png"/>
+                    </div>
+                    <ul>
+                        <li>1 taza de lentejas</li>
+                        <li>Cebolla</li>
+                        <li>Chile</li>
+                        <li>Culantro</li>
+                        <li>Canela</li>
+                        <li>Jenjibre en polvo</li>
+                        <li>Paprika</li>
+                        <li>1 cucharadita de polvo de hornear</li>
+                        <li>Sal</li>
+                        <li>4 tazas de harina</li>
+                        <li>1 taza de leche tibia</li>
+                        <li>1 cucharada de levadura</li>
+                        <li>3 cucharadas de mantequilla derretida</li>
+                        <li>3 cucharadas de azúcar</li>
+                        <li> 1 Huevo</li>
+                        <li>Ajonjolí</li>
+                        <li>Jamón</li>
+                        <li>Queso</li>
+                        <li>Lechuga</li>
+                        <li>Tomate</li>
+                        <li>Salsa chipotle (opcional)</li>
+                    </ul>
+                </div>
+                <div class=" content preparation">
+                    <div class="title">
+                        <span>Preparación</span>
+                        <img class="icon" src="../img/icons/preparacion.png"/>
+                    </div>
+                    <ul>
+                        <li>Colocar las lentejas en un tazón con agua y dejar reposar toda la noche.</li>
+                        <li>Escurrir las lentejas y colocarlas en un procesador con cebolla, chile y culantro.</li>
+                        <li>Agregar agua de ser necesario para procesar bien los ingredientes.</li>
+                        <li>Agregar la canela, la paprika, el jengibre, el polvo de hornear y la sal. Agregar harina para compactar la mezcla y poder formar las tortas.</li>
+                        <li>Cocinar las tortas con aceite hasta que esten doradas.</li>
+                        <li>Mezclar la leche, la mantequilla, el azúcar y la levadura. Dejar reposar.</li>
+                        <li>Agregar la harina, el huevo y la sal. Mezclar hasta formar la masa. Dejar reposar.</li>
+                        <li>Formar los bollos, ponerles huevo encima con una brocha y colocar ajonjolí encima.</li>
+                        <li>Engrasar una bandeja y colocar los bollos. Hornear hasta que esten dorados.</li>
+                        <li>Cocinar el jamón y caramelizar las cebollas con azúcar.</li>
+                        <li>Colocar mantequilla en una mitad del pan, una torta, jamón, queso, salsa chipotle, lechuga y tomate. Cerrar con la otra mitad del pan.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

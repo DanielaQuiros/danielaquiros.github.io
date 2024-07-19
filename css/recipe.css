@@ -48,12 +48,12 @@ body > main > .photo > .utensils{
     display: inline-block;
     margin-left: 50px;
     min-height: 220px;
-    padding: 0px 40px;
+    padding: 20px 40px;
     vertical-align: middle;
     width: calc(100% - 220px - 50px);
 }
 body > main > .photo > .utensils > .icon{
     height: 120px;
     width: 120px;
-    margin-top: 40px;
+    margin: 20px;
 }

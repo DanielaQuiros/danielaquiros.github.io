@@ -35,15 +35,16 @@ body{
     position: relative;
 }
 body > .header{
+    background-image: linear-gradient(to right, #e83f2e, #ffa9f9);
     position: sticky;
     top: 0px;
 }
 body > .header > h1{
-    background-image: linear-gradient(to right, #e83f2e, #ffa9f9);
     color: rgb(248, 245, 245);
     font-size: 90px;
     font-family: "Playwrite";
-    margin: 0px;
     text-align: center;
     text-shadow: 3px 3px 5px black;
+    max-width: calc( 100% - ( 100px + 30px ) * 2 );
+    margin: auto;
 }
