@@ -8,7 +8,7 @@
         <title>Queque de chocolate</title>
     </head>
     <body>
-        <header style="background-image: url('../img/qc.jpg');">
+        <header class="header">
             <h1>Queque de chocolate</h1>
             <button class="open-menu" onclick="document.querySelector('body > .menu').classList.add('open');">
                 <img class="open-icon" src="../img/icons/menu.png"/>
@@ -39,8 +39,20 @@
             </a>
         </div>
         <main>
-            <div class="ingredients">
-                <p class="title">Ingredientes</p>
+            <div class="photo">
+                <img class="img" src="../img/recipes/queque-chocolate.jpg" />
+                <div class="utensils">
+                    <img class="icon" src="../img/icons/horno.png"/>
+                    <img class="icon" src="../img/icons/colador.png"/>
+                    <img class="icon" src="../img/icons/tazon.png"/>
+                </div>
+            </div>
+            <div class="recipe">
+            <div class=" content ingredients">
+                <div class="title">
+                    <span>Ingredientes</span>
+                    <img class="icon" src="../img/icons/ingredientes.png"/>
+                </div>
                 <ul>
                     <li>3 bananos</li>
                     <li>1 taza de cacao puro</li>
@@ -55,8 +67,11 @@
                     <li>Chips de chocolate (Opcional)</li>
                 </ul>
             </div>
-            <div class="preparation">
-                <p class="title">Preparación</p>
+            <div class="content preparation">
+                <div class="title">
+                    <span>Preparación</span>
+                    <img class="icon" src="../img/icons/preparacion.png"/>
+                </div>
                 <ul>
                     <li>Tritular los bananos, la manzana, el huevo, el aceite y la vainilla.</li>
                     <li>Mezclar los ingredientes secos, agregarlos a la mezcla de banano y manzana.</li>
@@ -64,6 +79,7 @@
                     <li>Hornear hasta que se meta un palillo en el queque y salga limpio.</li>
                 </ul>
             </div>
+        </div>
         </main>
     </body>
 </html>
