@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/basic.css" rel="stylesheet" type="text/css"/>
         <link href="../css/recipe.css" rel="stylesheet" type="text/css"/>
         <meta charset="utf-8"/>
         <title>Galletas</title>
     </head>
     <body>
-        <header style="background-image: url('../img/gm.jpg');">
+        <header class="header">
             <h1>Galletas</h1>
-        </header> 
+            <button class="open-menu" onclick="document.querySelector('body > .menu').classList.add('open');">
+                <img class="open-icon" src="../img/icons/menu.png"/>
+            </button>
+        </header>
+        <div class="menu">
+            <header class="header-menu">
+                <div class="title">Menú</div>
+                <button class="close-menu" onclick="document.querySelector('body > .menu').classList.remove('open');">
+                    <img class="close-icon" src="../img/icons/x.png"/>
+                </button>
+            </header>
+            <a class="category" href="postres.html">
+                <img class="icon" src="../img/icons/dessert.png"/>
+                <div class="icon-title">Postres</div>
+            </a>
+            <a class="category" href="cakes.html">
+                <img class="icon" src="../img/icons/cake.png"/>
+                <div class="icon-title">Queques</div>
+            </a>
+            <a class="category" href="reposteria.html">
+                <img class="icon" src="../img/icons/cookie.png"/>
+                <div class="icon-title">Repostería</div>
+            </a>
+            <a class="category" href="platos.html">
+                <img class="icon" src="../img/icons/burger.png"/>
+                <div class="icon-title">Platos fuertes</div>
+            </a>
+        </div> 
         <main>
-            <div class="ingredients">
-                <p class="title">Ingredientes</p>
-                <ul>
-                    <li>1 barra de mantequilla</li>
-                    <li>2 tazas de harina</li>
-                    <li>3/4 de taza de azúcar</li>
-                    <li>1 huevo</li>
-                    <li>2 cucharaditas de polvo de hornear</li>
-                    <li>1 cucharadita de vainilla</li>
-                    <li>1/4 de cucharadita de sal</li>
-                    <li>2 cucharadas de leche líquida</li>
-                    <li>1 cucharadita de canela</li>
-                    <li>Maní sin sal</li>
-                </ul>
+            <div class="photo">
+                <img class="img" src="../img/recipes/galletas-mantequilla.jpg" />
+                <div class="utensils">
+                    <img class="icon" src="../img/icons/horno.png"/>
+                    <img class="icon" src="../img/icons/colador.png"/>
+                    <img class="icon" src="../img/icons/tazon.png"/>
+                </div>
             </div>
-            <div class="preparation">
-                <p class="title">Preparación</p>
-                <ul>
-                    <li>Cremar el azúcar y la mantequilla, agregar el huevo, la vainilla y la leche.</li>
-                    <li>Agregar la harina, la sal, el polvo de hornear y  la canela. Mezclar bien y refrigerar por una hora.</li>
-                    <li>Poner el maní en el procesador y luego agregarselo a la mezcla.</li>
-                    <li>Estirar la masa con un rodillo y cortar con moldes para galletas.</li>
-                    <li>Engrasar un a bandeja y colocar las galletas. Hornear hasta que esten doradas.</li>
-                </ul>
+            <div class="recipe">
+                <div class=" content ingredients">
+                    <div class="title">
+                        <span>Ingredientes</span>
+                        <img class="icon" src="../img/icons/ingredientes.png"/>
+                    </div>
+                    <ul>
+                        <li>1 barra de mantequilla</li>
+                        <li>2 tazas de harina</li>
+                        <li>3/4 de taza de azúcar</li>
+                        <li>1 huevo</li>
+                        <li>2 cucharaditas de polvo de hornear</li>
+                        <li>1 cucharadita de vainilla</li>
+                        <li>1/4 de cucharadita de sal</li>
+                        <li>2 cucharadas de leche líquida</li>
+                        <li>1 cucharadita de canela</li>
+                        <li>Maní sin sal</li>
+                    </ul>
+                </div>
+                <div class="content preparation">
+                    <div class="title">
+                        <span>Preparación</span>
+                        <img class="icon" src="../img/icons/preparacion.png"/>
+                    </div>
+                    <ul>
+                        <li>Cremar el azúcar y la mantequilla, agregar el huevo, la vainilla y la leche.</li>
+                        <li>Agregar la harina, la sal, el polvo de hornear y  la canela. Mezclar bien y refrigerar por una hora.</li>
+                        <li>Poner el maní en el procesador y luego agregarselo a la mezcla.</li>
+                        <li>Estirar la masa con un rodillo y cortar con moldes para galletas.</li>
+                        <li>Engrasar un a bandeja y colocar las galletas. Hornear hasta que esten doradas.</li>
+                    </ul>
+                </div>
             </div>
         </main>
     </body>

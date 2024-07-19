@@ -1,38 +1,83 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/basic.css" rel="stylesheet" type="text/css"/>
         <link href="../css/recipe.css" rel="stylesheet" type="text/css"/>
         <meta charset="utf-8"/>
         <title>Alfajores</title>
     </head>
     <body>
-        <header style="background-image: url('../img/aj.jpg');">
+        <header class="header">
+            <button class="open-menu" onclick="document.querySelector('body > .menu').classList.add('open');">
+                <img class="open-icon" src="../img/icons/menu.png"/>
+            </button>
             <h1>Alfajores</h1>
         </header>
+        <div class="menu">
+            <header class="header-menu">
+                <div class="title">Menú</div>
+                <button class="close-menu" onclick="document.querySelector('body > .menu').classList.remove('open');">
+                    <img class="close-icon" src="../img/icons/x.png"/>
+                </button>
+            </header>
+            <a class="category" href="postres.html">
+                <img class="icon" src="../img/icons/dessert.png"/>
+                <div class="icon-title">Postres</div>
+            </a>
+            <a class="category" href="cakes.html">
+                <img class="icon" src="../img/icons/cake.png"/>
+                <div class="icon-title">Queques</div>
+            </a>
+            <a class="category" href="reposteria.html">
+                <img class="icon" src="../img/icons/cookie.png"/>
+                <div class="icon-title">Repostería</div>
+            </a>
+            <a class="category" href="platos.html">
+                <img class="icon" src="../img/icons/burger.png"/>
+                <div class="icon-title">Platos fuertes</div>
+            </a>
+        </div>
         <main>
-            <div class="ingredients">
-                <p class="title">Ingredientes</p>
-                <ul>
-                    <li>1 barra de mantequilla</li>
-                    <li>1 taza de maicena</li>
-                    <li>1 taza de harina</li>
-                    <li>1/2 taza de azúcar en polvo</li>
-                    <li>1 huevo</li>
-                    <li>2 cucharaditas de polvo de hornear</li>
-                    <li>1 cucharadita de vainilla</li>
-                    <li>1 lata de dulce de leche</li>
-                </ul>
+            <div class="photo">
+                <img class="img" src="../img/recipes/alfajores.jpg" />
+                <div class="utensils">
+                    <img class="icon" src="../img/icons/horno.png"/>
+                    <img class="icon" src="../img/icons/colador.png"/>
+                    <img class="icon" src="../img/icons/tazon.png"/>
+                </div>
             </div>
-            <div class="preparation">
-                <p class="title">Preparación</p>
-                <ul>
-                    <li>Cremar el azúcar en polvo y la mantequilla</li>
-                    <li>Agregar a la mezcla anterior la harina, la maicena, la vainilla, el huevo y el polvo de hornear hasta formar una mezcla homogénea. Refrigerar por 40 minutos.</li>
-                    <li>Estirar la masa con un rodillo y cortar con un molde circular.</li>
-                    <li>Engrasar y enharinar una bandeja y colocar las galletas, pinchar con un tenedor en el centro cada galleta.</li>
-                    <li>Hornear las galletas por 10 minutos y dejar enfriar.</li>
-                    <li>Colocar dulce de leche sobre las galletas y luego unirlas. Rociar con azúcar en polvo.</li>
-                </ul>
+            <div class="recipe">
+                <div class=" content ingredients">
+                    <div class="title">
+                        <span>Ingredientes</span>
+                        <img class="icon" src="../img/icons/ingredientes.png"/>
+                    </div>
+                    <ul>
+                        <li>1 barra de mantequilla</li>
+                        <li>1 taza de maicena</li>
+                        <li>1 taza de harina</li>
+                        <li>1/2 taza de azúcar en polvo</li>
+                        <li>1 huevo</li>
+                        <li>2 cucharaditas de polvo de hornear</li>
+                        <li>1 cucharadita de vainilla</li>
+                        <li>1 lata de dulce de leche</li>
+                    </ul>
+                </div>
+                <div class=" content preparation">
+                    <div class="title">
+                        <span>Preparación</span>
+                        <img class="icon" src="../img/icons/preparacion.png"/>
+                    </div>
+                    <ul>
+                        <li>Cremar el azúcar en polvo y la mantequilla</li>
+                        <li>Agregar a la mezcla anterior la harina, la maicena, la vainilla, el huevo y el polvo de hornear hasta formar una mezcla homogénea. Refrigerar por 40 minutos.</li>
+                        <li>Estirar la masa con un rodillo y cortar con un molde circular.</li>
+                        <li>Engrasar y enharinar una bandeja y colocar las galletas, pinchar con un tenedor en el centro cada galleta.</li>
+                        <li>Hornear las galletas por 10 minutos y dejar enfriar.</li>
+                        <li>Colocar dulce de leche sobre las galletas y luego unirlas. Rociar con azúcar en polvo.</li>
+                    </ul>
+                </div>
             </div>
         </main>
     </body>

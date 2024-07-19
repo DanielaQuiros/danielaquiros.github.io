@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/basic.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/recipes.css" rel="stylesheet" type="text/css"/>
+        <meta charset="utf-8"/>
+        <title>Postres</title>
+    </head>
+    <body>
+        <header class="header">
+            <button class="open-menu" onclick="document.querySelector('body > .menu').classList.add('open');">
+                <img class="open-icon" src="../img/icons/menu.png"/>
+            </button>
+            <h1>Repostería</h1>
+        </header>
+        <div class="menu">
+            <header class="header-menu">
+                <div class="title">Menú</div>
+                <button class="close-menu" onclick="document.querySelector('body > .menu').classList.remove('open');">
+                    <img class="close-icon" src="../img/icons/x.png"/>
+                </button>
+            </header>
+            <a class="category" href="postres.html">
+                <img class="icon" src="../img/icons/dessert.png"/>
+                <div class="icon-title">Postres</div>
+            </a>
+            <a class="category" href="cakes.html">
+                <img class="icon" src="../img/icons/cake.png"/>
+                <div class="icon-title">Queques</div>
+            </a>
+            <a class="category" href="reposteria.html">
+                <img class="icon" src="../img/icons/cookie.png"/>
+                <div class="icon-title">Repostería</div>
+            </a>
+            <a class="category" href="platos.html">
+                <img class="icon" src="../img/icons/burger.png"/>
+                <div class="icon-title">Platos fuertes</div>
+            </a>
+        </div>
+        <main>
+            <a class="recipe" href="cookies.html">
+                <img class="img" src="../img/recipes/galletas-mantequilla.jpg"/>
+                <div class="name">Galletas de maní</div>
+            </a>
+            <a class="recipe" href="alfajores.html">
+                <img class="img" src="../img/recipes/alfajores.jpg"/>
+                <div class="name">Alfajores</div>
+            </a>
+            <a class="recipe" href="empanadas.html">
+                <img class="img" src="../img/recipes/empanada.jpg"/>
+                <div class="name">Empanadas</div>
+            </a>
+            <a class="recipe" href="cinnabon.html">
+                <img class="img" src="../img/recipes/rollos-canela.jpg"/>
+                <div class="name">Rollos de canela</div>
+            </a>
+        </main>
+    </body>
+</html>

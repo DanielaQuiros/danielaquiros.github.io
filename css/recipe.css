@@ -1,90 +1,59 @@
-@font-face {
-    font-family: "Cutive";
-    src: url("../font//CutiveMono-Regular.ttf");
-}
-@font-face {
-    font-family: "Dancing";
-    src: url("../font/DancingScript-Regular.ttf");
-}
-@font-face {
-    font-family: "Playwrite";
-    src: url("../font/PlaywriteDELA-Regular.ttf");
-}
-*{
-    box-sizing: border-box;
-}
-body{
-    background-image: url("../img/bg.jpg");
-    margin: 0px;
-}
-body > header{
-    background-size: cover;
-    background-position: center;
-    font-size: 40px;
-    padding: 5em 0px;
-}
-body > header > h1 {
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 10px;
-    color: rgb(201, 53, 53);
-    font-size: inherit;
-    font-family: "Playwrite";
-    margin: 0px auto;
-    padding: 10px 20px;
-    width: fit-content;
-    text-align: center;
-}
 body > main{
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 40px;
 }
-body > header > .pic{
-   /* height: 200px;*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-    text-align: center;
-    width: 320px;
+body > main > .recipe{
+    background-image: linear-gradient(to bottom, #e83d2ee7, #e065d8e7);
+    border-radius: 30px;
+    padding: 40px;
 }
-body > main > .ingredients > .title,
-body > main > .preparation > .title{
-    color: rgb(201, 53, 53);
+body > main > .recipe > .ingredients{
+    margin-bottom: 30px;
+}
+body > main > .recipe > .content{
+    color: white;
+    font-family: "Edu";
+    font-size: 50px;
+    overflow: hidden;
+}
+body > main > .recipe > .content > .title{
+    color: white;
     font-family: "Playwrite";
     font-size: 40px;
-    font-weight: bolder;
     text-align: center;
-    text-shadow: 3px 3px 5px black;
 }
-body > main > .ingredients,
-body > main > .preparation {
-    font-family: "Cutive";
-    font-size: 60px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+body > main > .recipe > .content > ul{
+    margin-left: 20px;
 }
-
-body > main > .ingredients{
-    background-color: rgba(231, 204, 227, 0.9);
-    border: 8px solid white;
-    border-radius: 5px;
-    box-shadow: 3px 5px 10px black;
-    padding: 10px;
-    text-align: left;
+body > main > .recipe > .content > .title > .icon{
+    height: 100px;
+    width: 100px;
+}
+body > main > .recipe > .content > .title > *{
     vertical-align: middle;
 }
-body > main > .ingredients > .subtitle{
-    font-family: "Dancing";
+body > main > .photo{
+    font-size: 0px;
+    margin-bottom: 30px;
 }
-body > main > .preparation {
-    background-color: rgba(231, 204, 227,0.9);
-    border: 8px solid white;
-    border-radius: 5px;
-    box-shadow: 3px 5px 10px black;
-    padding: 10px;
-    text-align: left;
-    vertical-align: top;
+body > main > .photo >.img{
+    border-radius: 30px;
+    height: 220px;
+    object-fit: cover;
+    vertical-align: middle;
+    width: 220px;
+}
+body > main > .photo > .utensils{
+    background-image: linear-gradient(to bottom, #e83d2ee7, #e065d8e7);
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 50px;
+    min-height: 220px;
+    padding: 20px 40px;
+    vertical-align: middle;
+    width: calc(100% - 220px - 50px);
+}
+body > main > .photo > .utensils > .icon{
+    height: 120px;
+    width: 120px;
+    margin: 20px;
 }
